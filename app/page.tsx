@@ -9,10 +9,10 @@ export default function Home() {
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
   return (
-    <div className="relative flex flex-col min-h-screen w-full">
+    <div className="relative flex flex-col min-h-screen w-full overflow-x-hidden">
       {/* Navbar */}
       <nav className="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <a href="#home" onClick={closeMobileMenu} className="flex items-center gap-3 group cursor-pointer hover:opacity-90">
             <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300">
@@ -151,7 +151,7 @@ export default function Home() {
             </div>
 
             {/* Stats / Social Proof */}
-            <div className="grid grid-cols-2 gap-6 w-full max-w-md border-t border-slate-800 pt-8 mt-2">
+            <div className="grid grid-cols-2 gap-4 sm:gap-6 w-full max-w-md border-t border-slate-800 pt-8 mt-2">
               <div className="flex flex-col gap-1">
                 <span className="text-2xl font-bold text-white font-display">2+</span>
                 <span className="text-xs text-slate-500">سنوات خبرة</span>
@@ -163,12 +163,12 @@ export default function Home() {
             </div>
 
             {/* Actions */}
-            <div className="flex flex-wrap gap-4 mt-4">
-              <a href="#projects" className="flex items-center gap-3 bg-primary text-background-dark px-8 py-3.5 rounded-lg font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,183,0,0.3)] inline-block cursor-pointer">
+            <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full sm:w-auto">
+              <a href="#projects" className="flex items-center justify-center gap-3 bg-primary text-background-dark px-8 py-3.5 rounded-lg font-bold hover:bg-white hover:scale-105 transition-all duration-300 shadow-[0_0_20px_rgba(255,183,0,0.3)] cursor-pointer w-full sm:w-auto text-center">
                 <span>استكشف أعمالي</span>
                 <span className="material-symbols-outlined text-xl">arrow_downward</span>
               </a>
-              <button className="flex items-center gap-3 px-8 py-3.5 rounded-lg font-bold text-white border border-slate-700 hover:border-primary/50 hover:bg-surface-dark transition-all duration-300 group">
+              <button className="flex items-center justify-center gap-3 px-8 py-3.5 rounded-lg font-bold text-white border border-slate-700 hover:border-primary/50 hover:bg-surface-dark transition-all duration-300 group w-full sm:w-auto text-center">
                 <span className="material-symbols-outlined text-xl text-primary group-hover:rotate-12 transition-transform">download</span>
                 <span>السيرة الذاتية</span>
               </button>
@@ -250,9 +250,11 @@ export default function Home() {
       </main>
 
       {/* Marquee / Skills Strip */}
-      <div className="bg-primary overflow-hidden py-3 rotate-1 md:rotate-0 transform md:transform-none">
-        <div className="flex gap-8 whitespace-nowrap animate-marquee min-w-full justify-around text-background-dark font-bold text-sm tracking-wider">
-          <span>WEB DEVELOPMENT</span> • <span>NEXT.JS</span> • <span>REACT</span> • <span>MOBILE APPS</span> • <span>DATA SCIENCE</span> • <span>AUTOMATION</span> • <span>N8N BOTS</span> • <span>PYTHON</span> • <span>UI/UX</span> • <span>C++</span> • <span>VIBE CODING</span> • <span>42 STUDIO</span>
+      <div className="overflow-hidden w-full">
+        <div className="bg-primary py-3 rotate-1 md:rotate-0 transform md:transform-none">
+          <div className="flex gap-8 whitespace-nowrap animate-marquee min-w-full justify-around text-background-dark font-bold text-sm tracking-wider">
+            <span>WEB DEVELOPMENT</span> • <span>NEXT.JS</span> • <span>REACT</span> • <span>MOBILE APPS</span> • <span>DATA SCIENCE</span> • <span>AUTOMATION</span> • <span>N8N BOTS</span> • <span>PYTHON</span> • <span>UI/UX</span> • <span>C++</span> • <span>VIBE CODING</span> • <span>42 STUDIO</span>
+          </div>
         </div>
       </div>
 

@@ -78,7 +78,7 @@ export default function SkillsSection() {
     const [heroHovered, setHeroHovered] = useState(false);
 
     return (
-        <section id="skills" className="py-24 md:py-32 relative z-10 w-full bg-background-dark border-t border-white/5" dir="rtl">
+        <section id="skills" className="py-24 md:py-32 relative z-10 w-full bg-background-dark border-t border-white/5 overflow-hidden" dir="rtl">
             {/* Background cyber grid */}
             <div className="absolute inset-0 cyber-grid opacity-20 pointer-events-none" />
             {/* Amber glow blob */}
