@@ -253,7 +253,7 @@ export default function Home() {
       <div className="overflow-hidden w-full">
         <div className="bg-primary py-3 rotate-1 md:rotate-0 transform md:transform-none">
           <div className="flex gap-8 whitespace-nowrap animate-marquee min-w-full justify-around text-background-dark font-bold text-sm tracking-wider">
-            <span>WEB DEVELOPMENT</span> • <span>NEXT.JS</span> • <span>REACT</span> • <span>MOBILE APPS</span> • <span>DATA SCIENCE</span> • <span>AUTOMATION</span> • <span>N8N BOTS</span> • <span>PYTHON</span> • <span>UI/UX</span> • <span>C++</span> • <span>VIBE CODING</span> • <span>42 STUDIO</span>
+            <span>WEB DEVELOPMENT</span> • <span>NEXT.JS</span> • <span>REACT</span> • <span>MOBILE APPS</span> • <span>DATA SCIENCE</span> • <span>AUTOMATION</span> • <span>N8N BOTS</span> • <span>PYTHON</span> • <span>UI/UX</span> • <span>C++</span> • <span>VIBE CODING</span>
           </div>
         </div>
       </div>
@@ -490,16 +490,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 42 Studio footer badge */}
-      <a
-        href="https://42.studio"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-4 left-4 z-50 flex items-center gap-2 bg-surface-dark/80 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-full hover:bg-surface-dark hover:border-primary/50 transition-all shadow-lg group"
-      >
-        <span className="text-[10px] text-slate-400 font-display tracking-widest uppercase group-hover:text-white transition-colors">Made by</span>
-        <span className="text-xs font-bold text-primary">42 Studio</span>
-      </a>
+
     </div>
   );
 }

@@ -25,7 +25,7 @@ function WebAppVisual() {
             <circle cx="44" cy="31" r="3.5" fill="#28c840" />
             {/* URL bar */}
             <rect x="55" y="25" width="80" height="12" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,183,0,0.2)" strokeWidth="1" />
-            <text x="65" y="34" fontSize="6" fill="rgba(255,183,0,0.6)" fontFamily="monospace">42.studio/app</text>
+
             {/* Code lines in browser */}
             <rect x="22" y="52" width="90" height="3" rx="1.5" fill="rgba(139,92,246,0.5)" />
             <rect x="22" y="60" width="70" height="3" rx="1.5" fill="rgba(255,183,0,0.3)" />
@@ -124,14 +124,7 @@ export default function SkillsSection() {
                             }}
                         />
 
-                        {/* 42 Studio watermark — revealed on hover */}
-                        <div
-                            className="absolute bottom-5 left-6 flex items-center gap-1.5 transition-all duration-500 pointer-events-none"
-                            style={{ opacity: heroHovered ? 1 : 0, transform: heroHovered ? "translateY(0)" : "translateY(6px)" }}
-                        >
-                            <span className="text-[10px] text-slate-500 uppercase tracking-widest font-display">Made by</span>
-                            <span className="text-xs font-bold text-primary/70">42 Studio</span>
-                        </div>
+
 
                         {/* Priority badge */}
                         <div className="flex items-center justify-between">
