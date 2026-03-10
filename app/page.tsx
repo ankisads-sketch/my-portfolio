@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import SkillsSection from "./components/SkillsSection";
+import SpllliteAnimator from "./components/SpllliteAnimator";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -15,8 +16,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
           {/* Logo */}
           <a href="#home" onClick={closeMobileMenu} className="flex items-center gap-3 group cursor-pointer hover:opacity-90">
-            <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300">
-              <span className="material-symbols-outlined text-2xl">code_blocks</span>
+            <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors duration-300 font-serif-ar font-bold text-2xl">
+              T
             </div>
             <div className="flex flex-col">
               <span className="font-serif-ar font-bold text-xl leading-none tracking-wide text-white">ت . م</span>
@@ -140,7 +141,7 @@ export default function Home() {
             {/* Main Typography */}
             <div className="flex flex-col gap-2">
               <h2 className="text-xl md:text-2xl font-light text-slate-300 tracking-wide">
-                مرحباً، أنا <span className="text-primary font-semibold">مطور برمجيات</span> وشغوف ببناء تجارب ويب متميزة
+                مرحباً، أنا <span className="text-primary font-semibold">عالم بيانات</span> وشغوف ببناء تجارب ويب متميزة
               </h2>
               <h1 className="font-serif-ar text-6xl md:text-8xl lg:text-9xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white via-slate-200 to-slate-400 hero-text-shadow leading-[1.3] pb-4">
                 تحسين مهدي
@@ -301,7 +302,7 @@ export default function Home() {
           <div className="mb-12 md:mb-20 flex flex-col md:flex-row items-center md:items-end justify-between gap-6 uppercase">
             <div>
               <h2 className="font-serif-ar text-4xl md:text-5xl font-bold text-white mb-4 text-center md:text-right">أهم الأعمال <span className="text-primary">.</span></h2>
-              <p className="text-slate-400 max-w-xl text-center md:text-right font-light">مجموعة مختارة من المشاريع التي تدمج بين الجانب التحليلي العميق للبيانات وتطوير الواجهات المتقدمة والمتجاوبة.</p>
+              <p className="text-slate-400 max-w-xl text-center md:text-right font-light">مشروع "Splllite" هو الأداة الأبرز التي قمت بتطويرها لتمكين المستخدمين من التفاعل مع الملفات الصوتية بطرق تعليمية ومبتكرة.</p>
             </div>
             <div className="relative flex items-center gap-2 border border-slate-700 bg-surface-dark/60 px-5 py-2 rounded-full cursor-not-allowed opacity-75 select-none" title="Coming Soon">
               {/* Pulsing dot */}
@@ -316,75 +317,80 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[340px]">
-            {/* Large Project - Web App */}
-            <div className="md:col-span-2 md:row-span-2 group relative rounded-2xl overflow-hidden border border-white/10 bg-background-dark p-8 flex flex-col justify-end transition-all hover:border-primary/50 min-h-[400px] md:min-h-0">
-              <div className="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-transparent z-10"></div>
-              {/* Minimal geometric background pattern */}
-              <div className="absolute inset-0 bg-[#0a0a0a] transition-transform duration-700 group-hover:scale-105 opacity-80 cyber-grid"></div>
+          <div className="grid grid-cols-1 gap-8">
+            {/* Splllite Project - Full Width */}
+            <div className="group relative rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-br from-[#0d0d0d] via-background-dark to-[#0a0f1c] min-h-[500px] flex flex-col md:flex-row transition-all duration-700 hover:border-primary/40 shadow-2xl">
+              {/* Visual Side */}
+              <div className="w-full md:w-1/2 relative overflow-hidden bg-[#050505] flex items-center justify-center p-12 min-h-[300px]">
+                <div className="absolute inset-0 cyber-grid opacity-20"></div>
 
-              <div className="relative z-20 transform transition-transform duration-500 group-hover:-translate-y-2">
-                <div className="flex gap-2 mb-4 flex-wrap">
-                  <span className="px-3 py-1 text-xs font-mono text-primary bg-primary/10 rounded-full border border-primary/20 backdrop-blur-md">تطبيق ويب</span>
-                  <span className="px-3 py-1 text-xs font-mono text-white bg-white/5 rounded-full border border-white/10 backdrop-blur-md" dir="ltr">Next.js & React</span>
+                <SpllliteAnimator />
+
+                {/* Floating Tags */}
+                <div className="absolute top-6 left-6 flex gap-2">
+                  <span className="px-3 py-1 text-[10px] font-mono font-bold tracking-widest uppercase bg-white/5 border border-white/10 rounded-full text-slate-400">Audio Engine v1.0</span>
                 </div>
-                <h3 className="font-serif-ar text-3xl font-bold text-white mb-3">منصة المحفظة الاستثمارية</h3>
-                <p className="text-slate-400 text-sm md:text-base max-w-lg line-clamp-3 font-light leading-relaxed">تطبيق ويب متكامل مصمم لعرض وتحليل البيانات الاستثمارية المعقدة في الوقت الفعلي بواجهة مستخدم تفاعلية وعصرية تعتمد على أحدث تقنيات React.</p>
               </div>
-            </div>
 
-            {/* Small Project 1 - Data Science */}
-            <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0d0d0d] p-6 flex flex-col transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div className="mb-auto flex items-start justify-between">
-                <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-400">
-                  <span className="material-symbols-outlined text-3xl">psychology_alt</span>
+              {/* Content Side */}
+              <div className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center text-right">
+                <div className="flex gap-2 mb-6 justify-end">
+                  <span className="px-3 py-1 text-xs font-mono text-primary bg-primary/10 rounded-full border border-primary/20 backdrop-blur-md">مشروع رئيسي</span>
+                  <span className="px-3 py-1 text-xs font-mono text-white bg-white/5 rounded-full border border-white/10 backdrop-blur-md" dir="ltr">Next.js & Web Audio API</span>
                 </div>
-                <span className="text-xs font-mono text-slate-500 bg-surface-dark px-2 py-1 rounded" dir="ltr">Python / ML</span>
-              </div>
-              <div className="mt-8 z-10">
-                <h3 className="font-bold text-xl text-white mb-2">نموذج التنبؤ الذكي</h3>
-                <p className="text-sm text-slate-400 line-clamp-3 font-light">نموذج تعلم آلي مطور باستخدام Python و TensorFlow لتحليل سلوكيات المستخدمين بدقة عالية والتنبؤ بالاتجاهات المستقبلية للسوق.</p>
-              </div>
-              <div className="absolute -right-10 -bottom-10 opacity-10 group-hover:opacity-20 transition-opacity">
-                <span className="material-symbols-outlined text-9xl">analytics</span>
-              </div>
-            </div>
 
-            {/* Small Project 2 - Web App */}
-            <div className="group relative rounded-2xl overflow-hidden border border-white/10 bg-[#0d0d0d] p-6 flex flex-col transition-all hover:border-primary/50 hover:-translate-y-1">
-              <div className="mb-auto flex items-start justify-between">
-                <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center text-purple-400">
-                  <span className="material-symbols-outlined text-3xl">api</span>
+                <h3 className="font-serif-ar text-4xl md:text-5xl font-bold text-white mb-6">Splllite</h3>
+
+                <p className="text-slate-400 text-lg md:text-xl leading-relaxed font-light mb-8 max-w-xl self-end">
+                  أداة ذكية ومبتكرة لتقسيم الملفات الصوتية، صممت خصيصاً لمساعدة المستخدمين على حفظ القصائد، الأناشيد، وأي مواد صوتية تعليمية. يتيح لك التطبيق رفع الملفات الصوتية وإنشاء حلقات تكرارية (loops) وفترات صمت (gaps) قابلة للتخصيص، مما يسهل عملية الحفظ الشفهي بكفاءة عالية.
+                </p>
+
+                <div className="flex flex-wrap gap-3 justify-end mb-10">
+                  {["معالجة صوتية", "تركيز عالي", "أتمتة الحفظ", "واجهة تفاعلية"].map((tag) => (
+                    <span key={tag} className="text-xs px-3 py-1.5 rounded-lg bg-surface-dark border border-white/5 text-slate-300">
+                      {tag}
+                    </span>
+                  ))}
                 </div>
-                <span className="text-xs font-mono text-slate-500 bg-surface-dark px-2 py-1 rounded" dir="ltr">Node.js / Express</span>
-              </div>
-              <div className="mt-8 z-10">
-                <h3 className="font-bold text-xl text-white mb-2">واجهة برمجة تطبيقات قابلة للتوسع</h3>
-                <p className="text-sm text-slate-400 line-clamp-3 font-light">بنية تحتية متطورة مصممة باستخدام Node.js لربط الواجهات الأمامية بقواعد البيانات بشكل آمن وسريع يدعم آلاف الطلبات المتزامنة.</p>
-              </div>
-              <div className="absolute -right-10 -bottom-10 opacity-10 group-hover:opacity-20 transition-opacity">
-                <span className="material-symbols-outlined text-9xl">dns</span>
-              </div>
-            </div>
 
-            {/* Medium Project - Data Visualization */}
-            <div className="md:col-span-3 group relative rounded-2xl overflow-hidden border border-white/10 bg-gradient-to-br from-surface-dark to-background-dark p-8 flex flex-col md:flex-row items-center gap-8 md:gap-16 transition-all hover:border-primary/50 text-right">
-              <div className="flex-1 w-full order-2 md:order-1">
-                <span className="inline-block px-3 py-1 mb-4 text-xs font-mono text-green-400 bg-green-400/10 rounded-full border border-green-400/20" dir="ltr">Data Engineering</span>
-                <h3 className="font-serif-ar text-2xl font-bold text-white mb-3">هندسة وتصور البيانات</h3>
-                <p className="text-slate-400 text-sm md:text-base leading-relaxed max-w-2xl font-light">بناء أنظمة متكاملة لجمع، تنظيف، وتخزين البيانات الضخمة، وعرضها في لوحات تحكم ديناميكية توفر رؤى دقيقة وسريعة لاتخاذ القرارات الاستراتيجية للمؤسسات.</p>
-              </div>
-              <div className="w-full md:w-1/3 order-1 md:order-2 aspect-video md:aspect-auto h-48 md:h-full rounded-xl bg-[#0a0a0a] border border-white/5 relative overflow-hidden flex items-center justify-center">
-                <span className="material-symbols-outlined text-8xl text-slate-800 absolute opacity-50 transform -rotate-12">monitoring</span>
-                <div className="relative z-10 grid grid-cols-4 gap-3 p-6 w-full h-full items-end" dir="ltr">
-                  <div className="bg-primary/40 rounded-t-sm w-full h-[40%] animate-[pulse_3s_ease-in-out_infinite]"></div>
-                  <div className="bg-blue-400/40 rounded-t-sm w-full h-[70%] animate-[pulse_4s_ease-in-out_infinite] delay-75"></div>
-                  <div className="bg-purple-400/40 rounded-t-sm w-full h-[50%] animate-[pulse_2s_ease-in-out_infinite] delay-150"></div>
-                  <div className="bg-green-400/40 rounded-t-sm w-full h-[90%] animate-[pulse_5s_ease-in-out_infinite] delay-300"></div>
+                <div className="flex flex-col sm:flex-row gap-4 justify-end">
+                  {/* Suspended Android Download Button */}
+                  <div className="cyber-pulse-wrapper cyber-pulse-wrapper-pended relative group overflow-visible">
+                    <div className="cyber-pulse-bg"></div>
+                    <div className="cyber-scanline"></div>
+                    <div className="cyber-btn-content opacity-70">
+                      <div className="flex items-center gap-3">
+                        <div className="bg-white/5 p-2 rounded-xl flex items-center justify-center text-slate-500">
+                          <span className="material-symbols-outlined text-[20px]">lock</span>
+                        </div>
+                        <div className="flex flex-col items-end">
+                          <span className="text-[10px] text-slate-500 uppercase tracking-[0.2em] font-bold">Android App</span>
+                          <span className="font-bold text-slate-400">تحميل التطبيق</span>
+                        </div>
+                      </div>
+                    </div>
+                    {/* Soon Badge */}
+                    <div className="absolute -top-3 -left-3 z-20 bg-surface-dark border border-white/10 text-[10px] font-bold px-3 py-1 rounded-full text-primary shadow-xl animate-pulse flex items-center gap-1.5 backdrop-blur-md">
+                      <span className="w-1 h-1 rounded-full bg-primary"></span>
+                      <span>SOON / قريباً</span>
+                    </div>
+                  </div>
+
+
+                  <a
+                    href="https://soundsplitter-git-main-tahseenbus-1463s-projects.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-background-dark transition-all duration-300 group"
+                  >
+                    <span>عرض المشروع مباشرة</span>
+                    <span className="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_left</span>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </section>
 
