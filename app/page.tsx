@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import SkillsSection from "./components/SkillsSection";
-import SpllliteAnimator from "./components/SpllliteAnimator";
+import MemodyAnimator from "./components/MemodyAnimator";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -302,7 +302,7 @@ export default function Home() {
           <div className="mb-12 md:mb-20 flex flex-col md:flex-row items-center md:items-end justify-between gap-6 uppercase">
             <div>
               <h2 className="font-serif-ar text-4xl md:text-5xl font-bold text-white mb-4 text-center md:text-right">أهم الأعمال <span className="text-primary">.</span></h2>
-              <p className="text-slate-400 max-w-xl text-center md:text-right font-light">مشروع "Splllite" هو الأداة الأبرز التي قمت بتطويرها لتمكين المستخدمين من التفاعل مع الملفات الصوتية بطرق تعليمية ومبتكرة.</p>
+              <p className="text-slate-400 max-w-xl text-center md:text-right font-light">مشروع "Memody" هو الأداة الأبرز التي قمت بتطويرها لتمكين المستخدمين من التفاعل مع الملفات الصوتية بطرق تعليمية ومبتكرة.</p>
             </div>
             <div className="relative flex items-center gap-2 border border-slate-700 bg-surface-dark/60 px-5 py-2 rounded-full cursor-not-allowed opacity-75 select-none" title="Coming Soon">
               {/* Pulsing dot */}
@@ -324,7 +324,7 @@ export default function Home() {
               <div className="w-full md:w-1/2 relative overflow-hidden bg-[#050505] flex items-center justify-center p-12 min-h-[300px]">
                 <div className="absolute inset-0 cyber-grid opacity-20"></div>
 
-                <SpllliteAnimator />
+                <MemodyAnimator />
 
                 {/* Floating Tags */}
                 <div className="absolute top-6 left-6 flex gap-2">
@@ -339,7 +339,7 @@ export default function Home() {
                   <span className="px-3 py-1 text-xs font-mono text-white bg-white/5 rounded-full border border-white/10 backdrop-blur-md" dir="ltr">Next.js & Web Audio API</span>
                 </div>
 
-                <h3 className="font-serif-ar text-4xl md:text-5xl font-bold text-white mb-6">Splllite</h3>
+                <h3 className="font-serif-ar text-4xl md:text-5xl font-bold text-white mb-6">Memody</h3>
 
                 <p className="text-slate-400 text-lg md:text-xl leading-relaxed font-light mb-8 max-w-xl self-end">
                   أداة ذكية ومبتكرة لتقسيم الملفات الصوتية، صممت خصيصاً لمساعدة المستخدمين على حفظ القصائد، الأناشيد، وأي مواد صوتية تعليمية. يتيح لك التطبيق رفع الملفات الصوتية وإنشاء حلقات تكرارية (loops) وفترات صمت (gaps) قابلة للتخصيص، مما يسهل عملية الحفظ الشفهي بكفاءة عالية.
@@ -378,7 +378,7 @@ export default function Home() {
 
 
                   <a
-                    href="https://soundsplitter-git-main-tahseenbus-1463s-projects.vercel.app/"
+                    href="https://soundsplitter.vercel.app"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-white hover:text-background-dark transition-all duration-300 group"

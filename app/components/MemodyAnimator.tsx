@@ -3,14 +3,14 @@
 import React from "react";
 
 /**
- * SpllliteAnimator
+ * MemodyAnimator
  * Redesigned for:
  * 1. File enters box.
  * 2. Box glows, file turns into 3 initial parts.
  * 3. Each of the 3 parts multiplies by 2 (becoming 6 total).
  * 4. Animated "playback" loop with gaps.
  */
-export default function SpllliteAnimator() {
+export default function MemodyAnimator() {
     return (
         <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
             {/* Background Aura */}
