@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cairo, Amiri, Space_Grotesk } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const cairo = Cairo({
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${cairo.variable} ${amiri.variable} ${spaceGrotesk.variable} bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen overflow-x-hidden selection:bg-primary selection:text-black antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
